@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>BOOK LIBRARY</h1>
+    </header>
+    <div class="top-btn">
+      <button type="submit" class="add-book">Add Book</button>
+      <div class="overlay"></div>
+      <div class="form-display">
+        <button class="close-form">&times;</button>
+        <form action="" class="form">
+          <label for="book-name">Title:</label>
+          <input type="text" name="book-name" id="book-name" required />
+          <label for="author">AUTHOR</label>
+          <input type="text" name="Author" id="author" required />
+          <label for="pages">Number of Pages</label>
+          <input type="number" name="pages" id="pages" required />
+          <label for="status">Status</label>
+          <select name="status" id="status">
+            <option value="Read">Read</option>
+            <option value="Not Read Yet">Not read</option>
+          </select>
+          <button type="submit" class="sub-btn">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <main class="main-content">
+      <!-- <div class="card">
+        <h2>Tittle:The Alchemist</h2>
+        <h3>Author:Pablo Cohelio</h3>
+        <h4>Pages:200</h4>
+        <button class="btn">Read</button>
+        <button class="btn-remove">remove</button>
+      </div> -->
+    </main>
+    <div></div>
+    <script src="script.js"></script>
+  </body>
+</html>
