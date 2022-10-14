@@ -23,9 +23,9 @@ let myLibrary = [
     status: "read",
   },
   {
-    title: "some",
-    author: "any",
-    page: 120,
+    title: "Rich Dad Poor Dad",
+    author: "Robert Kiyosaki and Sharon Lechter",
+    page: 243,
     status: "read",
   },
 ];
@@ -107,9 +107,9 @@ function displayBook() {
   myLibrary.forEach((book, index) => {
     const mainCard = document.createElement("div");
     mainCard.className = "card";
-    mainCard.innerHTML = ` <h2>Tittle:${book.title}</h2>
-      <h3>Author:${book.author}</h3>
-      <h4>Pages:${book.page}</h4>
+    mainCard.innerHTML = ` <h2>Tittle: ${book.title}</h2>
+      <h3>Author: ${book.author}</h3>
+      <h4>Pages: ${book.page}</h4>
       <button class="btnStatus" onclick="toggleText(this)">Change read status</p>
       <button class="btn-remove">remove</button>`;
     // console.log(mainCard.setAttribute("data-index", index));
